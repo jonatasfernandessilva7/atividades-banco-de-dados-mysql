@@ -180,6 +180,22 @@ SELECT film_preco AS preco_unitario, SUM(film_preco) AS total FROM filmes GROUP 
 
 -- * -- * -- * -- * -- * -- * -- * -- * --
 
+-- comando alter
 
+ALTER TABLE clientes ADD cli_endereco VARCHAR(100);
+
+ALTER TABLE filmes
+ADD fil_direcao VARCHAR(50)
+FIRST;
+
+ALTER TABLE filmes
+ADD fil_atores VARCHAR(200)
+AFTER fil_direcao;
+
+ALTER TABLE filmes DROP COLUMN fil_direcao;
+ALTER TABLE filmes DROP COLUMN fil_atores;
+
+ALTER TABLE clientes CHANGE COLUMN cli_email
+cli_endereco_eletronico varchar(80);
 
 # ------------------------------------------------------------------------------------------------------

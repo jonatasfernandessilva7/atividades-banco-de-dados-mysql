@@ -1,0 +1,5 @@
+cli_codigo,cli_nome,cli_email,cli_compras,fil_codigo,fil_titulo,fil_genero,fil_censura
+2,"joao silva",joaosilva@hotmail.com,2,1,"vish que bom",adolescente,18
+1,"joao barros",joaobarros@hotmail.com,1,1,"vish que bom",adolescente,18
+2,"joao silva",joaosilva@hotmail.com,2,2,"vish que ruim",jovem,29
+1,"joao barros",joaobarros@hotmail.com,1,2,"vish que ruim",jovem,29

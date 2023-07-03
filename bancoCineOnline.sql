@@ -104,7 +104,7 @@ AND cinema_codigo = ses_codcinema;
 
 SELECT * FROM clientes CROSS JOIN filmes;
 
-SELECT cinema_nome, cinema_sala, fil_titulo FROM cinema, filmes WHERE fil_titulo = 'vish que bom' GROUP BY cinema_nome;
+SELECT cinema_nome, cinema_sala, fil_titulo FROM cinema, filmes WHERE fil_titulo = 'vish que bom';
 
 -- ----------------------- exercício -------------------
 

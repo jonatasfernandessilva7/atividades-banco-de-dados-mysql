@@ -61,19 +61,59 @@ FOREIGN KEY (comp_fil) REFERENCES filmes (fil_codigo)
 -- inserindo dados
 
 INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(1, 'brasao', '02', 8, 'iataboanacacaca');
-INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(2, 'iuy', '03', 15, 'iataboanacacaca');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(2, 'rapaz', '03', 15, 'iataboanacacaca');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(3, 'demais', '03', 15, 'kkkkk');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(4, 'cavalo', '03', 15, 'aaaaa');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(5, 'jquest', '03', 15, 'aaaaaaaabbb');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(6, 'nx0', '03', 15, 'oitchau');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(7, 'restart', '03', 15, 'hoje é');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(8, 'rebelde', '03', 15, 'fica com deus');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(9, 'esmeralda', '03', 15, 'e de vez enquando');
+INSERT INTO cinema (cinema_codigo,cinema_nome, cinema_sala, cinema_capacidade, cinema_cidade) VALUES(10, 'fuga das chikens', '03', 15, 'um boa noite');
 
 INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(1, 'vish que bom', 'adolescente', 18);
 INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(2, 'vish que ruim', 'jovem', 29);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(3, 'vish que mais ou menos', 'jovem', 29);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(4, 'vish que talvez', 'jovem', 29);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(5, 'vish que minha mãe é uma pea', 'jovem', 40);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(6, 'vish que 155554', 'jovem', 12);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(7, 'vish que não sei contar', 'jovem', 50);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(8, 'vish que sei lá', 'jovem', 15);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(9, 'mudando de assunto', 'jovem', 5);
+INSERT INTO filmes (fil_codigo,fil_titulo, fil_genero, fil_censura) VALUES(10, 'você ta tao bonita', 'jovem', 90);
 
 INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(1, 2, 1, '1888-09-10', 19.85);
 INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(2, 2, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(3, 1, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(4, 1, 2, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(10, 3, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(9, 4, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(8, 5, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(7, 1, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(6, 6, 1, '1898-10-09', 19.90);
+INSERT INTO sessao (ses_codigo,ses_codfilme, ses_codcinema, ses_datahora,ses_preco) VALUES(5, 7, 1, '1898-10-09', 19.90);
 
 INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(1, 20, 'vish que bom', 1);
 INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(2, 22, 'vish que ruim', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(3, 22, 'vish que ruim', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(4, 22, 'vish que bom', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(5, 22, 'mudando de assunto', 9);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(6, 22, 'você ta tao bonita', 10);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(7, 22, 'vish que ruim', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(8, 22, 'vish que ruim', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(9, 22, 'vish que ruim', 2);
+INSERT INTO compras (comp_cod,comp_valor, comp_nome, comp_fil) VALUES(10, 22, 'vish que ruim', 2);
 
 INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(1, 'joao barros', 'joaobarros@hotmail.com',1);
 INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(2, 'joao silva', 'joaosilva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(3, 'joao adalberto', 'joacccosilva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(4, 'joao ferreira', 'joaosiaaalva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(5, 'joao pinto', 'joaosilbbbva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(6, 'joao alves', 'joaosdddilva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(7, 'joao nome', 'joaosil34va@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(8, 'joao firmonio', 'joaasasosilva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(9, 'joao texeira', 'joaossrsilva@hotmail.com',2);
+INSERT INTO clientes (cli_codigo,cli_nome, cli_email, cli_compras) VALUES(10, 'joao melado', 'joaoshahahilva@hotmail.com',2);
 
 -- buscando os dados 
 

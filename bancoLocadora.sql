@@ -47,14 +47,14 @@ DESC clientes;
 DESC filmes;
 
 INSERT INTO clientes
-VALUES(112, 'antonio robreto amadeu', '112112112-12', '1250-02-12', 'f', 'antoniocavaloamadeuroberto@gmail.oprkut.gb');
+VALUES(112, 'antonio robreto amadeu e silva araujo', '11214812-12', '1250-02-12', 'f', 'antoniocavaloamadeuroberto@gmail.oprkut.ssb');
 
 SELECT * FROM clientes WHERE cli_codigo=112;
 
 INSERT INTO filmes
-VALUES(3,'gta sa', 'reallife', '16:58:59', 'on', 8.5);
+VALUES(3,'gta sa', 'mundo aberto', '16:58:59', 'on', 9.5);
 
-UPDATE clientes SET cli_nome = 'jose gabriela bezerra' WHERE cli_nome = 'antonio robreto amadeu';
+UPDATE clientes SET cli_nome = 'jose gabi gada' WHERE cli_nome = 'antonio robreto amadeu e silva araujo';
 
 DELETE FROM clientes WHERE cli_codigo=112;
 
@@ -65,14 +65,14 @@ SELECT cli_nome, cli_cpf FROM clientes;
 SELECT * FROM filmes;
 
 INSERT INTO clientes
-VALUES(112, 'antonio bgxdvasghdch amadeu', '656575656-12', '1250-02-12', 'm', 'bg\hdfchg\sd@gmail.oprkut.gb');
+VALUES(112, 'antonio bgxdvasghdch amadeu kkk de raiolaser', '656575446-12', '1250-02-12', '-', 'bg\hdfchg\sd@gmail.oprkut.hushjhjh');
 
 SELECT cli_nome, cli_email FROM clientes WHERE cli_sexo = 'm';
 
 SELECT film_codigo , film_titulo FROM filmes;
 
 INSERT INTO filmes
-VALUES(5,'e o vento levou', 'eita que filme', '16:58:59', 'on', 8.5);
+VALUES(5,'e o vento levou', 'eita que filme legal', '16:58:59', 'alugado', 8.5);
 
 SELECT film_duracao FROM filmes WHERE film_titulo='e o vento levou';
 
